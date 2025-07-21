@@ -18,13 +18,15 @@
 		<label>SRIDHAR</label>
 	</div>
 	<div class="right-side">
-		<div class="menu">menu</div>
-		<ul>
+		
+		<ul id="sidemenu">
 		    <li><a href="#home" >HOME</a></li>
 		    <li><a href="#about" >ABOUT</a></li>
 		    <li><a href="#projects" >PROJECTS</a></li>
 		    <li><a href="#contact" >CONTACT</a></li>
+			<i class="fa-solid fa-xmark" onclick="closemenu()"></i>
 		</ul>
+		<i class="fa-solid fa-bars" onclick="openmenu()"></i>
 	</div>
 </header>
 <main>
@@ -39,7 +41,7 @@
 		</div>
 	</div>
 	<div class="home-logo">
-		<img src="" alt="dp">
+		<img class="logo" src="dp.png" alt="dp">
 	</div>
      </div>
      <div class="mouse">
@@ -83,17 +85,7 @@
 		<p class="content-info">Here you will find some of the personal and clients projects that I created with each project containing its own case study </p>
 		<div class="projects-row">
 			<div class="projects-row-left">
-				<img src="C:\Users\Padma\OneDrive\ドキュメント\Portfolio\dopefolio2.jpg" alt="dopofolio2">
-			</div>
-			<div class="projects-row-right">
-				<h3>Dopefolio</h3>
-				<p class="project-content"> Dopefolio is a succesful Open-Source project that I created. It offers a clean, responsive, and professional design that developers can easily customize to showcase their skills,projects, and experience.The layout, styling, and interactions ate created entirely with frontend technologies I'm familiar with, without using any frameworks or build tools. This project demonstrates my ability to design and structure a complete multi-page website optimized for performance, readability, and user experience. </p>
-				<a class="btn btn1" href="" >case study</a>
-			</div>
-		</div>
-		<div class="projects-row">
-			<div class="projects-row-left">
-				<img src="C:\Users\Padma\OneDrive\ドキュメント\Portfolio\dopefolio2.jpg" alt="dopofolio2">
+				<img src="dopefolio2.jpg" alt="dopefolio2">
 			</div>
 			<div class="projects-row-right">
 				<h3>Dopefolio</h3>
@@ -136,5 +128,21 @@
 		</div>
 	</div>
 </footer>
+
+<!--------------------------JS for open & close menu -------------------->
+<script>
+
+let sidemenu = document.getElementById("sidemenu");
+
+function openmenu(){
+	sidemenu.style.right = "0";
+}
+
+function closemenu(){
+	sidemenu.style.right = "-100%";
+}
+
+
+</script>
 </body>
 </html>
