@@ -459,7 +459,9 @@ main{
 .projects-row-right {
 	text-align:center;
 }
-
+.projects-row-right p{
+	text-align:left;
+}
 }
 /*-------------------------------contact------------------------*/
 #contact{
